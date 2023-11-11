@@ -1,7 +1,6 @@
 import { AudioManager } from "./components/AudioManager";
 import Transcript from "./components/Transcript";
 import { useTranscriber } from "./hooks/useTranscriber";
-import { NextUIProvider, Code } from "@nextui-org/react";
 import { Button } from "antd";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
                 <AudioManager transcriber={transcriber} />
                 <Transcript transcribedData={transcriber.output} />
             </div>
-            <Code></Code>
             <Button color='primary'>Button</Button>
         </div>
     );
